@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socket Tester</title>
+    <style>
+      body { margin: 0; padding-bottom: 3rem; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: black; color: white}
+    </style>
+<script src="https://cdn.jsdelivr.net/npm/socket.io@4.6.1/client-dist/socket.io.js" cors="anonymous"></script>
+<script>
+// ACTUAL CODE BELOW //
+      window.socket = io();
+      socket.on('data', function(msg) {
+        console.log(msg);
+      });
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
